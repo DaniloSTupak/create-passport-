@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input type="text" class="password-display" readonly placeholder="Тут буде пароль">
+            <button id="copy-btn">Копіювати</button>
+        </div>
+
+        <div class="settings">
+            <div class="settings-item">
+                <label for="">Довжина: <span id="length-val">12</span></label>
+                <input type="range" id="length-slider" min="6" max="30" value="12">
+
+            </div>
+        </div>
+
+        <div class="setting-item">
+            <input type="checkbox" id="include-numbers" checked>
+            <label for="include-numbers">Цифри</label>
+        </div>
+
+        <div class="setting-item">
+            <input type="checkbox" id="include-symbols">
+            <label for="include-symbols">Символи</label>
+        </div>
+    
+
+    <button id="generate-btn" class="main-btn">Згенерувати</button>
+
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
