@@ -1,4 +1,4 @@
-import { generatePassword } from "./generator";
+import { generatePassword } from "./generator.js";
 import { elements, updateDisplay, copyToClipboard } from "./ui.js";
 elements.lengthSlider.addEventListener('input', (e) => {
     elements.lengthText.textContent = e.target.value;
